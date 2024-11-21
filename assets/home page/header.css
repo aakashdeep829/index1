@@ -1,0 +1,423 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(https://bollyflix.fi/wp-content/themes/mts_sociallyviral/images/hbg9.png);
+  font-family: "Alef", sans-serif;
+}
+
+/* Green background class for the body */
+body .green-bg {
+  background-color: rgb(0, 0, 0);
+  /* Semi-transparent overlay */
+  position: fixed;
+  /* Fix it over the body */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  /* Below the side menu */
+}
+
+
+/***************************************************************************** header*********************************************************************/
+
+.header-container {
+  position: relative;
+  max-width: 1000px;
+  width: 96%;
+  height: 220px;
+  background-color: #27272a;
+  padding: 25px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-container .header-img {
+  position: absolute;
+  top: 10px;
+  left: 10%;
+  right: 90%;
+}
+
+
+
+#myInput {
+  position: absolute;
+  left: 0px;
+  top: 104px;
+  color: white;
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: 0px;
+  background: rgb(65, 65, 65);
+  border-radius: 10px;
+}
+
+/*************************************************************nav ************************************************************************/
+.nav {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: -40px;
+  max-width: 1000px;
+  width: 96%;
+  z-index: 1;
+}
+
+
+header {
+  max-height: 100px;
+  background: #494949;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0rem;
+  position: relative;
+  background-color: #494949;
+}
+
+.nav-links p {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  padding: 11px 0px;
+  border-radius: 10px;
+  border-right: 0.1px solid white;
+  width: 160px;
+  height: 48px;
+  margin-left: 0px;
+  margin-right: 0px;
+  text-align: center;
+  justify-content: center;
+}
+
+
+/*********************************************************** Dropdown Menu **************************************************************/
+.dropdown-content1 {
+  display: none;
+  position: absolute;
+  width: 200px;
+  top: 49px;
+  background-color: #494949;
+  border-top: 0.5px solid white;
+}
+
+.dropdown-content1 a {
+  color: rgb(251, 251, 251);
+  padding: 16px 35px;
+  text-decoration: none;
+  display: block;
+
+  /* text-shadow: 0 0 5px rgba(255, 255, 255, 0.8),
+              0 0 10px rgba(255, 255, 255, 0.6),
+              0 0 15px rgba(255, 255, 255, 0.4); */
+}
+
+.dropdown-content1 a:hover {
+  background-color: #f0eaea1a;
+  border-radius: 10px;
+}
+
+.dropdown1:hover .dropdown-content1 {
+  display: block;
+}
+
+.dropdown-content1 .sub-dropdown1 {
+  position: relative;
+}
+
+.dropdown-content1 .sub-dropdown-content1 {
+  display: none;
+  position: absolute;
+  left: 200px;
+  padding: 0px 0px 0px 20px;
+  width: 170px;
+  background-color: #494949;
+  min-width: 100px;
+  top: 0px;
+}
+
+.dropdown-content1 .sub-dropdown1:hover .sub-dropdown-content1 {
+  display: block;
+}
+
+
+.logo {
+  position: absolute;
+  background-color: #494949;
+  left: 0px;
+  top: -5px;
+  height: 50px;
+  max-width: 1000px;
+  width: 100%;
+
+}
+
+.logo-div {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: none;
+  padding: 10px;
+}
+
+.hamburger {
+  position: absolute;
+  right: 20px;
+  top: 5px;
+  font-size: 1.5rem;
+  display: none;
+  cursor: pointer;
+}
+
+/* ///////////////////////////////////////////////////////////Side Menu////////////////////////////////////////////////////////////// */
+
+.fa-solid {
+  position: relative;
+  left: 10px;
+}
+
+.side-menu {
+  position: fixed;
+  max-width: 1050px;
+  top: -0px;
+  right: -50vw;
+  width: 50vw;
+  height: 100vh;
+  background: #494949;
+  color: white;
+  transition: left 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  display: none;
+  overflow-y: scroll;
+  z-index: 10;
+}
+
+.side-menu h4 {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 15px 10px 0px 10px;
+  gap: 2rem;
+  left: -20px;
+  width: 50vw;
+  height: 48px;
+  /* border-bottom: 1px solid white; */
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.dropdown-content2 {
+  display: none;
+  position: relative;
+  left: -20px;
+  width: 50vw;
+  top: 0px;
+  background-color: #494949;
+  overflow-y: scroll;
+}
+
+.dropdown-content2 a {
+  color: rgb(251, 251, 251);
+  padding: 16px 35px;
+  text-decoration: none;
+  border: 1px solid #424141;
+  display: block;
+
+  /* text-shadow: 0 0 5px rgba(255, 255, 255, 0.8),
+              0 0 10px rgba(255, 255, 255, 0.6),
+              0 0 15px rgba(255, 255, 255, 0.4); */
+}
+
+.dropdown-content2 a:hover {
+  background-color: #f0eaea1a;
+  border-radius: 10px;
+  cursor: all-scroll;
+}
+
+.dropdown2:hover .dropdown-content2 {
+  display: block;
+}
+
+.dropdown-content2 .sub-dropdown2 {
+  position: relative;
+}
+
+.dropdown-content2 .sub-dropdown-content2 {
+  display: none;
+  position: relative;
+  left: 0px;
+  padding: 0px 0px 0px 0px;
+  width: 170px;
+  background-color: #494949;
+  width: 100%;
+  top: 0px;
+  overflow-y: scroll;
+}
+
+.dropdown-content2 .sub-dropdown2:hover .sub-dropdown-content2 {
+  display: block;
+}
+
+.side-menu .close-btn {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.side-menu.open {
+  left: 0;
+}
+
+/***************************************************************wrapper************************************************************************/
+
+.wrapper {
+  max-width: 1000px;
+  width: 96%;
+  display: flex;
+  position: relative;
+  max-width: 1000px;
+  top: 20px;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.studio {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: .5rem;
+  justify-content: center;
+}
+
+.studio a {
+  color: white;
+  border: 1px solid white;
+  box-shadow: 0px 0px 15px rgb(255, 255, 255);
+  padding: 10px 5px;
+  border-radius: 20px;
+  width: 160px;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+/*****************************************************************movies *************************************************************************/
+.movies-container {
+  position: relative;
+  top: 70px;
+  max-width: 1050px;
+  width: 96%;
+  padding: 5px 5px;
+  margin-right: auto;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+  gap: 5px;
+  justify-content: center;
+  background-color: rgba(49, 214, 214, 0);
+}
+
+
+.box {
+  /* border: 3px solid white; */
+  background-color: #27272A;
+  box-shadow: 0px 0px 3px rgb(255, 255, 255);
+  text-align: center;
+  color: white;
+  border-radius: 16px;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  height: 390px;
+  width: 180px;
+  justify-items: center;
+}
+
+.box-img {
+  width: 100%;
+  height: 100%;
+}
+
+.box-img img {
+
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  width: 180px;
+}
+
+/* .box:hover {
+    transform: perspective(500px) translate3d(0px, 0, 30px);
+    transition: 0.2s ease-in-out;
+}
+
+.box-img:hover {
+    transform: perspective(500px) translate3d(0px, 0, 0px);
+    transition: 0.2s ease-in-out;
+} */
+
+/**************************************************************************Responsive Design ******************************************************************/
+
+/* @media (max-height:100px){
+.studio{
+  margin-top: 10px;
+}
+
+.movies-container{
+  margin-top: 3rem;
+}
+
+} */
+
+@media (max-width:768px) {
+
+  .wrapper{
+    margin-top: 50px;
+  }
+
+.nav-links p{
+  display: none;
+}
+
+  .close-btn {
+    display: none;
+  }
+
+  .side-menu,
+  .hamburger {
+    display: block;
+  }
+
+  .logo,
+  .logo-div {
+    display: block;
+   
+  }
+}
+
+@media (max-width: 968px) {
+  .header-img .movies-container {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 5));
+  }
+}
